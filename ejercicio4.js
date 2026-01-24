@@ -16,6 +16,10 @@ const cajero = (opcion, monto) => {
       break;
     }
     case "retirar": {
+      if (monto <= 0) {
+        console.log("Monto inválido.");
+        return;
+      }
       if (monto > saldo) {
         console.log("No hay suficiente saldo.");
         return;
@@ -33,3 +37,4 @@ cajero("depositar", 0);
 cajero("depositar", -20);
 cajero("retirar", 2500);
 cajero("retirar", 10);
+cajero("retirar", -500);

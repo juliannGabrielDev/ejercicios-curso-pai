@@ -8,5 +8,5 @@ const edadFutura = persona.edad + 5;
 const altura = 1.75 * 100;
 
 console.log(
-  `${persona.nombre} mide ${altura} centimetros,\nen 5 años tendra ${edadFutura},\ny ${persona.edad > 18 ? "es mayor de edad" : "no es mayor de edad"}`,
+  `${persona.nombre} mide ${altura} centimetros,\nen 5 años tendrá ${edadFutura},\ny ${persona.edad >= 18 ? "es mayor de edad" : "no es mayor de edad"}`,
 );
